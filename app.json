@@ -36,6 +36,7 @@
       ]
     ],
     "experiments": {
+      "baseUrl": "/water-monitoring",
       "typedRoutes": true
     }
   }
