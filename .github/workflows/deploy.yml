@@ -21,6 +21,11 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Firebase Config TS 
+        env:
+          FIREBASE_CONFIG_TS: ${{ secrets.FIREBASE_CONFIG_TS }}
+        run: echo $FIREBASE_CONFIG_TS | base64 --decode > firebase.config.ts
+
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
